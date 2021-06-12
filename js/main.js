@@ -1,4 +1,42 @@
-// AULA 03: Condicionais, laços de repetição e data
+// AULA 04: Desenvolva página web
+// VARIÁVEL GLOBAL
+var validar;
+function validaIdade(idade){
+    if (idade >= 18){
+        validar = true;
+    } else {
+        validar = false;
+    }
+    return validar;
+}
+var idade = prompt("Qual a sua idade?")
+alert(validaIdade(idade));
+
+/* VARIÁVEL LOCAL
+function validaIdade(idade){
+    var validar;
+    if (idade >= 18){
+        validar = true;
+    } else {
+        validar = false;
+    }
+    return validar;
+}
+var idade = prompt("Qual a sua idade?")
+alert(validaIdade(idade));
+*/
+
+function setReplace(frase, nome, novo_nome){
+    return frase.replace(nome, novo_nome);
+}
+console.log(setReplace("Vai Japão", "Japão", "Brasil"));
+
+function soma(n1, n2){
+    return n1 + n2;
+}
+console.log(soma(5, 10));
+
+/* AULA 03: Condicionais, laços de repetição e data
 var d = new Date();
 console.log(d);
 console.log(d.getMonth() + 1);
@@ -6,7 +44,7 @@ console.log(d.getDay());
 // fiquei com dúvida
 console.log(d.getHours());
 console.log(d.getMinutes());
-/*
+
 var count;
 for (count = 0; count <= 5; count++){
     console.log(count);
