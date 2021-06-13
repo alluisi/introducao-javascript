@@ -1,4 +1,35 @@
-// AULA 04: Desenvolva página web
+// AULA 05: Manipulando elementos da página
+
+function clicou(){
+    // alert("Obrigado por clicar!");
+    document.getElementById("agradecimento").innerHTML = "<b>Obrigado por clicar!</b>";
+}
+
+function redirecionar(){
+    window.open("https://digitalinnovation.one/");
+    // window.location.href = "https://digitalinnovation.one/";
+}
+
+function trocar(elemento){
+    // document.getElementById("mousemove").innerHTML = "Obrigado por passar o mouse";
+    elemento.innerHTML = "Obrigado por passar o mouse";
+    // alert("trocar texto");
+}
+
+function voltar(elemento){
+    // document.getElementById("mousemove").innerHTML = "Passe o mouse aqui";
+    elemento.innerHTML = "Passe o mause aqui";
+}
+
+function load(){
+    alert("Página carregada");
+}
+
+function funcaoChange(elemento){
+    console.log(elemento.value);
+}
+
+/* AULA 04: Desenvolva página web
 // VARIÁVEL GLOBAL
 var validar;
 function validaIdade(idade){
@@ -11,8 +42,7 @@ function validaIdade(idade){
 }
 var idade = prompt("Qual a sua idade?")
 alert(validaIdade(idade));
-
-/* VARIÁVEL LOCAL
+// VARIÁVEL LOCAL
 function validaIdade(idade){
     var validar;
     if (idade >= 18){
@@ -24,7 +54,6 @@ function validaIdade(idade){
 }
 var idade = prompt("Qual a sua idade?")
 alert(validaIdade(idade));
-*/
 
 function setReplace(frase, nome, novo_nome){
     return frase.replace(nome, novo_nome);
@@ -35,6 +64,7 @@ function soma(n1, n2){
     return n1 + n2;
 }
 console.log(soma(5, 10));
+*/
 
 /* AULA 03: Condicionais, laços de repetição e data
 var d = new Date();
